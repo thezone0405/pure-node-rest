@@ -1,0 +1,43 @@
+{
+  "name": "pure-node-rest",
+  "version": "1.0.0",
+  "description": "This application is intended to demonstrate pure javascript ES6 Node.js rest API without any underlying frameworks that's not related for testing purposes",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-watch -L src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thezone0405/pure-node-rest.git"
+  },
+  "author": "thezone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thezone0405/pure-node-rest/issues"
+  },
+  "homepage": "https://github.com/thezone0405/pure-node-rest#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "test"
+    ],
+    "transform": {
+      ".js": "<rootDir>/node_modules/babel-jest"
+    },
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  }
+}
